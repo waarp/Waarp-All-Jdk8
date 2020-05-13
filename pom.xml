@@ -485,6 +485,32 @@
 			          <artifactId>maven-compiler-plugin</artifactId>
 			          <version>${maven.compiler.version}</version>
 			        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>${maven.site.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>${maven.javadoc.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>${license-maven-plugin.version}</version>
+          <configuration>
+            <offline>true</offline>
+          </configuration>
+          <dependencies>
+            <dependency>
+              <groupId>org.beiter.michael.util</groupId>
+              <artifactId>build-tools</artifactId>
+              <version>${buildToolsVersion}</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+
 			</plugins>
 
 		</pluginManagement>
@@ -813,6 +839,7 @@
 				<configuration>
 					<skipEmptyReport>true</skipEmptyReport>
 					<dependencyDetailsEnabled>true</dependencyDetailsEnabled>
+                                        <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
 					<!-- <skip>${module.project}</skip> -->
 				</configuration>
 				<reportSets>
@@ -909,6 +936,18 @@
 					</reportSet>
 				</reportSets>
 			</plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <configuration>
+              <!-- Specific configuration for the aggregate report -->
+            </configuration>
+          </reportSet>
+        </reportSets>
+      </plugin>
+
 		</plugins>
 	</reporting>
 
