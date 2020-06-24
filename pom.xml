@@ -147,6 +147,8 @@
 		<module.project>false</module.project>
 		<reuseThreadTest>false</reuseThreadTest>
 		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<attach-distribution>false</attach-distribution>
@@ -161,42 +163,44 @@
 		<!-- Waarp Versions -->
 		<waarp.directory.version>test</waarp.directory.version>
 		<waarp.module.version>test</waarp.module.version>
-		<waarp.version>3.3.4</waarp.version>
+		<waarp.version>3.4.0</waarp.version>
 		<revision>${waarp.version}</revision>
 
 		<!-- Dependencies versions -->
-		<netty.version>4.1.50.Final</netty.version>
-		<netty-tcnative.version>2.0.30.Final</netty-tcnative.version>
-		<waarp-shaded.version>1.0.1</waarp-shaded.version><!-- Netty HTTP and Selenuum -->
-		<netty.http.version>1.3.1</netty.http.version><!--Java6 shaded version -->
+		<netty.version>4.1.51.Final</netty.version>
+		<netty-tcnative.version>2.0.31.Final</netty-tcnative.version>
+		<waarp-shaded.version>1.0.2</waarp-shaded.version><!-- Netty HTTP and
+		Selenuum -->
+		<netty.http.version>1.5.0</netty.http.version><!--Java6 shaded version -->
 		<slf4j.version>1.7.30</slf4j.version>
 		<logback.version>1.2.3</logback.version>
 		<guava.version>29.0-jre</guava.version><!--Java6 version -->
 		<commons.compress.version>1.20</commons.compress.version>
 		<commons.daemon.version>1.2.2</commons.daemon.version>
-		<commons.io.version>2.6</commons.io.version>
+		<commons.io.version>2.7</commons.io.version>
 		<commons.dbcp.version>1.4</commons.dbcp.version>
 		<commons.pool.version>2.8.0</commons.pool.version>
 		<commons-exec.version>1.3</commons-exec.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-net.version>3.6</commons-net.version>
 		<commons-codec.version>1.14</commons-codec.version>
-		<commons-beanutils.version>1.8.3</commons-beanutils.version>
+		<commons-beanutils.version>1.9.4</commons-beanutils.version>
 		<commons-cli.version>1.4</commons-cli.version>
                 <commons.pool1.version>1.6</commons.pool1.version>
 		<h2.version>1.4.200</h2.version><!--Java6 version -->
 		<mariadb.version>2.5.4</mariadb.version>
 		<mysql.version>8.0.20</mysql.version>
-		<postgresql.version>42.2.12</postgresql.version>
+		<postgresql.version>42.2.14</postgresql.version>
 		<oracle.version>6</oracle.version>
-		<jackson.version>2.11.0</jackson.version><!--Java6 version -->
-		<jackson-databind.version>2.11.0</jackson-databind.version><!--Java6 version -->
+		<jackson.version>2.11.1</jackson.version><!--Java6 version -->
+		<jackson-databind.version>2.11.1</jackson-databind.version><!--Java6 version -->
 		<jaxen.version>1.2.0</jaxen.version>
 		<dom4j.version>2.1.3</dom4j.version>
+		<xerces.version>2.12.1</xerces.version>
 		<javasysmon.version>0.3.6</javasysmon.version>
 		<gson.version>2.8.6</gson.version>
-		<resteasy.jaxrs.version>3.12.0.Final</resteasy.jaxrs.version>
-		<resteasy.client.version>4.5.3.Final</resteasy.client.version>
+		<resteasy.jaxrs.version>3.12.1.Final</resteasy.jaxrs.version>
+		<resteasy.client.version>3.12.1.Final</resteasy.client.version>
 		<javax.ws.rs.version>2.1.1</javax.ws.rs.version><!--Java6 version -->
 		<jetty.version>9.4.28.v20200408</jetty.version>
 		<snmp4j.version>2.8.3</snmp4j.version>
@@ -208,10 +212,10 @@
 			3.1.0 Java7 -->
 		<ftp4j.version>1.7.2</ftp4j.version>
 		<joda-time.version>2.10.6</joda-time.version>
-		<jersey-common.version>2.30.1</jersey-common.version>
+		<jersey-common.version>2.31</jersey-common.version>
 		<bytebuddy.version>1.10.10</bytebuddy.version>
 		<jna.version>5.5.0</jna.version>
-		<jnr-posix-version>3.0.55</jnr-posix-version>
+		<jnr-posix-version>3.0.57</jnr-posix-version>
 		<junit.version>4.13</junit.version>
 		<javaassist.version>3.27.0-GA</javaassist.version>
 		<assertj.version>3.16.0</assertj.version>
@@ -220,7 +224,7 @@
 		<mockito.version>3.3.3</mockito.version>
 		<findbugs.version>3.0.2</findbugs.version>
 		<test-containers.version>1.14.1</test-containers.version>
-		<zjsonpatch.version>0.4.10</zjsonpatch.version>
+		<zjsonpatch.version>0.4.11</zjsonpatch.version>
 		<log4j2.version>2.13.3</log4j2.version>
 		<selenium.version>3.141.59</selenium.version><!--Java6 shaded version -->
 		<assertj-swing.version>3.9.2</assertj-swing.version>
@@ -257,10 +261,10 @@
 		<maven-enforcer-plugin.version>3.0.0-M3
 		</maven-enforcer-plugin.version><!-- 1.3.1 -->
 		<versions-maven-plugin.version>2.7</versions-maven-plugin.version>
-		<animal-sniffer-maven-plugin.version>1.18</animal-sniffer-maven-plugin.version>
+		<animal-sniffer-maven-plugin.version>1.19</animal-sniffer-maven-plugin.version>
 		<ant.version>1.10.8</ant.version><!-- 1.8.2 -->
 		<apiviz.version>1.3.4</apiviz.version>
-		<maven-shade-plugin>3.2.3</maven-shade-plugin>
+		<maven-shade-plugin>3.2.4</maven-shade-plugin>
 		<buildToolsVersion>1.3</buildToolsVersion>
 		<coberturaMavenPluginVersion>2.7</coberturaMavenPluginVersion>
 		<flatten-maven.version>1.2.2</flatten-maven.version>
@@ -537,6 +541,7 @@
 					<nuspecAnalyzerEnabled>false</nuspecAnalyzerEnabled>
 					<nugetconfAnalyzerEnabled>false</nugetconfAnalyzerEnabled>
 					<assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+					<failOnError>false</failOnError>
 				</configuration>
 				<executions>
 					<execution>
@@ -559,6 +564,18 @@
 			<plugin>
 				<artifactId>maven-enforcer-plugin</artifactId>
 				<version>${maven-enforcer-plugin.version}</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>extra-enforcer-rules</artifactId>
+						<version>1.3</version>
+					</dependency>
+					<dependency>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>animal-sniffer-enforcer-rule</artifactId>
+						<version>${animal-sniffer-maven-plugin.version}</version>
+					</dependency>
+				</dependencies>
 				<executions>
 					<execution>
 						<id>enforce-tools</id>
@@ -574,22 +591,36 @@
 									<version>[1.8.0,)</version>
 								</requireJavaVersion>
 								<requireMavenVersion>
-									<version>[3.3.9,)</version>
+									<version>[3.5.4,)</version>
 								</requireMavenVersion>
 							</rules>
 						</configuration>
 					</execution>
 					<execution>
 						<configuration>
-							<fail>false</fail>
+							<fail>true</fail>
 							<rules>
-								<dependencyConvergence />
+								<dependencyConvergence/>
 							</rules>
 						</configuration>
 						<id>enforce-dependencies</id>
 						<goals>
 							<goal>enforce</goal>
 						</goals>
+					</execution>
+					<execution>
+						<id>enforce-bytecode-version</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<enforceBytecodeVersion>
+									<maxJdkVersion>1.8</maxJdkVersion>
+								</enforceBytecodeVersion>
+							</rules>
+							<fail>true</fail>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
@@ -784,6 +815,7 @@
 					<nuspecAnalyzerEnabled>false</nuspecAnalyzerEnabled>
 					<nugetconfAnalyzerEnabled>false</nugetconfAnalyzerEnabled>
 					<assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+					<failOnError>false</failOnError>
 					<!-- <skip>${module.project}</skip> -->
 				</configuration>
 				<reportSets>
@@ -825,7 +857,7 @@
 				<configuration>
 					<skipEmptyReport>true</skipEmptyReport>
 					<dependencyDetailsEnabled>true</dependencyDetailsEnabled>
-                                        <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+          <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
 					<!-- <skip>${module.project}</skip> -->
 				</configuration>
 				<reportSets>
@@ -1051,6 +1083,10 @@
 					<exclusion>
 						<groupId>org.slf4j</groupId>
 						<artifactId>slf4j-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-beanutils</groupId>
+						<artifactId>commons-beanutils-core</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -1462,6 +1498,11 @@
 				<version>${dom4j.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.exist-db.thirdparty.xerces</groupId>
+				<artifactId>xercesImpl</artifactId>
+				<version>${xerces.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.jboss.resteasy</groupId>
 				<artifactId>resteasy-jaxrs</artifactId>
 				<version>${resteasy.jaxrs.version}</version>
@@ -1536,7 +1577,7 @@
 			</dependency>
 			<dependency>
 				<groupId>commons-beanutils</groupId>
-				<artifactId>commons-beanutils-core</artifactId>
+				<artifactId>commons-beanutils</artifactId>
 				<version>${commons-beanutils.version}</version>
 				<exclusions>
 					<exclusion>
@@ -2014,6 +2055,14 @@
 			<artifactId>dom4j</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.exist-db.thirdparty.xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-jaxrs</artifactId>
 		</dependency>
@@ -2027,7 +2076,7 @@
 		</dependency>
 		<dependency>
 			<groupId>commons-beanutils</groupId>
-			<artifactId>commons-beanutils-core</artifactId>
+			<artifactId>commons-beanutils</artifactId>
 		</dependency>
 
 		<!-- ################ Jackson #################### -->
@@ -2111,10 +2160,6 @@
 		<dependency>
 			<groupId>com.google.code.findbugs</groupId>
 			<artifactId>jsr305</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>jaxen</groupId>
-			<artifactId>jaxen</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>javasysmon</groupId>
