@@ -1,7 +1,9 @@
 Waarp All Version JDK 8
 =======================
 
-This project is not anymore needed since 3.5.1 Waarp-All can produce native JRE 6, 8 and 11 jar binaries.
+**This project is not anymore needed since 3.5.1 Waarp-All can produce native JRE 6, 8 and 11 jar binaries.**
+
+
 
 **Version for JDK8 only: No source code is modified, only dependencies are.**
 
